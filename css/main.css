@@ -1,0 +1,28 @@
+section {
+  min-height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  background-color: yellow;
+}
+
+.couple {
+  border: 2px solid green;
+  display: flex; 
+}
+
+.person {
+  max-width: 100px;
+
+}
+
+.person img {
+  width: 100%;
+}
+
+
+
+.choices{
+  display: flex;
+  background-color: green;
+  justify-content: space-around;
+}
