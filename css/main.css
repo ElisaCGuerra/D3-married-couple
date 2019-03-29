@@ -7,7 +7,7 @@ section {
 
 .couple {
   border: 2px solid green;
-  display: flex; 
+  display: flex;
 }
 
 .person {
@@ -25,4 +25,7 @@ section {
   display: flex;
   background-color: green;
   justify-content: space-around;
+}
+.choice{
+  display: flex;
 }
