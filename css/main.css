@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Mouse+Memoirs');
 @import url('https://fonts.googleapis.com/css?family=Patrick+Hand');
 
+
 h1 {
 font-family: 'Mouse Memoirs', sans-serif;
 font-size: 3em;
@@ -31,13 +32,28 @@ text-align: center;
 
 section {
 min-height: 100vh;
-  display: flex;
-  justify-content: space-between;
-  background-color: yellow;
-background: url("images/ecran.svg") top center no-repeat;
+display: flex;
+justify-content: space-between;
+background-color: yellow;
+background: url("images/ecran.svg") bottom center no-repeat;
 background-size: cover;
 margin-bottom: 0px;
 }
+
+
+@media screen and (max-width: 640px) {
+  section {
+    background: blue;
+  }
+}
+
+section > div {
+  flex-basis: 300px;
+  flex-grow: 0;
+  flex-shrink: 1;
+}
+
+
 
 .couple {
   margin: 70px;
@@ -45,8 +61,7 @@ margin-bottom: 0px;
 }
 
 .person {
-  max-width: 100px;
-
+  flex-basis: 100px;
 }
 
 .person img {
