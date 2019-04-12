@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Mouse+Memoirs');
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand');
 
 h1 {
 font-family: 'Mouse Memoirs', sans-serif;
@@ -10,12 +10,21 @@ text-align: center;
 margin-top: 10px;
 }
 
+p {
+font-family: 'Patrick Hand', cursive;
+text-align: center;
+margin-top: 400px;
+margin-left: 350px;
+margin-right: 350px;
+font-size: 1.2em;
+}
+
 body {
 margin: 0px;
 }
 
 h2 {
-font-family: 'Playfair Display', serif;
+font-family: 'Patrick Hand', cursive;
 color: rgb(47, 51, 96);
 text-align: center;
 }
@@ -59,27 +68,36 @@ overflow: hidden;
 }
 
 .back-to-start {
-  background: rgb(244, 128,125);
+  background: url('images/nuage.svg') no-repeat;
   padding: 25px;
-  display: block;
-  border-radius: 22px;
   position: absolute;
   top : 10%;
   left :10%;
+  width: 100px;
+  height: 100px;
+  color: rgb(244, 128,125);
+  display: block;
 }
+
 .choice a {
   display: flex;
 }
 
 
 .loser {
-  background: yellow url('images/perdu.svg') top center no-repeat;
+  background: rgb(250, 227, 75) url('images/perdu.svg') top center no-repeat;
   background-size: cover;
   min-height: 100vh;
 }
 
 .winner {
   background: yellow url('images/gagne.svg') top center no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.index {
+  background: yellow url('images/accueil.svg') top center no-repeat;
   background-size: cover;
   min-height: 100vh;
 }
