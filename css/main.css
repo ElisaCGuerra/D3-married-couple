@@ -22,6 +22,20 @@ font-size: 1.2em;
 
 body {
 margin: 0px;
+background-color: rgb(244, 128,125);
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  max-width: 120px;
+}
+
+.logo img {
+  width : 100%;
 }
 
 h2 {
@@ -34,8 +48,8 @@ section {
 min-height: 100vh;
 display: flex;
 justify-content: space-between;
-background-color: yellow;
 background: url("images/ecran.svg") bottom center no-repeat;
+background-color: rgb(244, 128,125);
 background-size: cover;
 margin-bottom: 0px;
 }
@@ -43,7 +57,8 @@ margin-bottom: 0px;
 
 @media screen and (max-width: 640px) {
   section {
-    background: blue;
+  background: url("images/fondportrait.svg") bottom center no-repeat;
+background-size: cover;
   }
 }
 
@@ -79,7 +94,7 @@ overflow: hidden;
   display: flex;
   background-color: rgb(244, 128,125);
   justify-content: space-around;
-  margin-bottom: 25px
+  margin-bottom: 25px;
 }
 
 .back-to-start {
@@ -96,6 +111,7 @@ overflow: hidden;
 
 .choice a {
   display: flex;
+  justify-content: center;
 }
 
 
@@ -105,14 +121,42 @@ overflow: hidden;
   min-height: 100vh;
 }
 
+.do-it-again {
+  background: url('images/nuage2.svg') no-repeat;
+  padding: 25px;
+  position: absolute;
+  top : 10%;
+  left :10%;
+  width: 100px;
+  height: 100px;
+  color: rgb(244, 128,125);
+  display: block;
+}
+
 .winner {
   background: yellow url('images/gagne.svg') top center no-repeat;
   background-size: cover;
   min-height: 100vh;
 }
 
+.start-playing {
+  background: url('images/startplaying.svg') no-repeat;
+  padding: 25px;
+  position: absolute;
+  top : 120%;
+  left :45%;
+  width: 100px;
+  height: 100px;
+  color: rgb(244, 128,125);
+  display: block;
+}
+
 .index {
-  background: yellow url('images/accueil.svg') top center no-repeat;
-  background-size: cover;
   min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  background: url("images/accueil.svg") top center no-repeat;
+  background-color: rgb(244, 128,125);
+  background-size: cover;
+  margin-bottom: 0px;
 }
