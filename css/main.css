@@ -32,10 +32,13 @@ header {
 
 .logo {
   max-width: 120px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .logo img {
   width : 100%;
+  display: flex;
 }
 
 h2 {
