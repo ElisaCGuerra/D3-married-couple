@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Mouse+Memoirs');
 @import url('https://fonts.googleapis.com/css?family=Patrick+Hand');
 
-
 h1 {
 font-family: 'Mouse Memoirs', sans-serif;
 font-size: 3em;
@@ -60,7 +59,7 @@ margin-bottom: 0px;
 
 @media screen and (max-width: 640px) {
   section {
-  background: url("images/fondportrait.svg") bottom center no-repeat;
+  background: url("images/fondportrait.jpg") bottom center no-repeat;
 background-size: cover;
   }
 }
@@ -140,6 +139,16 @@ overflow: hidden;
   background: yellow url('images/gagne.svg') top center no-repeat;
   background-size: cover;
   min-height: 100vh;
+}
+
+
+.video{
+  min-height: 100vh;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 
