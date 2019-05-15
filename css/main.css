@@ -8,15 +8,15 @@ line-height: 1.3;
 color: rgb(255, 255, 255);
 text-align: center;
 margin-top: 10px;
+margin-bottom: 3px;
 }
 
 p {
 font-family: 'Patrick Hand', cursive;
 text-align: center;
-margin-top: 400px;
-margin-left: 350px;
-margin-right: 350px;
 font-size: 1.2em;
+line-height: 1.2;
+margin: 0 auto;
 }
 
 body {
@@ -26,14 +26,7 @@ background-color: rgb(244, 128,125);
 
 header {
   display: flex;
-  align-content: center;
-  font-family: 'Mouse Memoirs', sans-serif;
-  font-size: 3em;
-}
-
-a{
-  color: #FFFF;
-  margin-right: 100px
+  align-items: center;
 }
 
 .logo {
@@ -148,17 +141,6 @@ overflow: hidden;
   min-height: 100vh;
 }
 
-.start-playing {
-  background: url('images/startplaying.svg') no-repeat;
-  padding: 25px;
-  position: absolute;
-  top : 120%;
-  left :45%;
-  width: 100px;
-  height: 100px;
-  color: rgb(244, 128,125);
-  display: block;
-}
 
 .video{
   min-height: 100vh;
@@ -174,8 +156,73 @@ overflow: hidden;
   min-height: 100vh;
   display: flex;
   justify-content: space-between;
-  background: url("images/accueil.svg") top center no-repeat;
   background-color: rgb(244, 128,125);
   background-size: cover;
   margin-bottom: 0px;
+}
+.help {
+  font-family: 'Mouse Memoirs'
+
+}
+
+.main-content {
+  max-width: 640px;
+  margin: 0 auto;
+  color: rgb(0,0,0);
+}
+
+.main-content h1 {
+  font-size: 9em;
+  text-shadow: 4px 5px 0px rgba(44,132,240,1);
+  letter-spacing: 3px;
+    position: relative;
+    /*border: 1px solid green;*/
+}
+
+.main-content h1::after,
+.main-content h1::before  {
+  content : url('images/etoiles.svg');
+  display: block;
+  height: 60px;
+  width: 30px;
+  position: absolute;
+
+}
+
+.main-content h1::after {
+  top : 0;
+  right : 0;
+}
+.main-content h1::before {
+  top : 0;
+  left : 0;
+}
+
+
+.help {
+  background: url('images/poussiere.svg') 50% 50% no-repeat;
+  background-size: 100%;
+  margin: 0 auto;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5em;
+  color : rgb(44,132,240);
+}
+
+.help::after {
+  content: url('images/herisson.png');
+  position: relative;
+  left : 90px;
+}
+
+.start-playing {
+  background: url('images/startplaying.svg') no-repeat;
+  margin: 0 auto;
+  padding: 25px;
+  width: 100px;
+  height: 100px;
+  color: rgb(244, 128,125);
+  display: block;
 }
