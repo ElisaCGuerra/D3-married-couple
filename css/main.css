@@ -111,6 +111,16 @@ overflow: hidden;
   display: block;
 }
 
+a {
+  font-family: 'Mouse Memoirs', sans-serif;
+  font-size: 3em;
+  line-height: 1.3;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-left: auto;
+  margin-right: 50px;
+}
+
 .choice a {
   display: flex;
   justify-content: center;
